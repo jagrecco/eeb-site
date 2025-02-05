@@ -1,7 +1,18 @@
 ---
-
+import { Image } from "astro:assets";
+import localMural from "../assets/mural.webp";
 ---
 
 <h1 class="text-3xl text-blue-400 text-center">
   Educación fundada en <span class="text-blue-800">principios</span>
 </h1>
+
+<h2 class="text-2xl text-center">¡Bienvenidos!</h2>
+
+<p class="text-xl text-green-400 text-center">
+  Damos la bienvenida a nuestra escuela, anhelando que su paso por ella sea no
+  solo una experiencia formativa, sino enriquecedora en todos los aspectos
+  esenciales de la vida
+</p>
+
+<Image src={localMural} alt="Mural Secundario" />
