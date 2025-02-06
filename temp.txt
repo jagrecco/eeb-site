@@ -1,0 +1,4 @@
+import { Image } from "astro:assets";
+import localLogo from "../assets/logo color EEB.png";
+
+<Image class="max-w-28 p-3" src={localLogo} alt="Logo institucional" />

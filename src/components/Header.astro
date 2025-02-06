@@ -1,12 +1,31 @@
 ---
 import { Image } from "astro:assets";
 import localLogo from "../assets/logo color EEB.png";
+import faceLogo from "../assets/svgs/facebook.svg";
+import instaLogo from "../assets/svgs/instagram.svg";
+import mailLogo from "../assets/svgs/email2.svg";
+import mapsPin from "../assets/svgs/google-maps-pin.svg";
 ---
 
-<Image class="max-w-28 p-3" src={localLogo} alt="Logo institucional" />
+<div class="py-3">
+  <div class="flex gap-2">
+    <Image class="w-8" src={mapsPin} alt="Maps pin" />
+    <p>Tomás Justo Villegas 2724, B1754 San Justo</p>
+    <p>011 4441-1306</p>
+    <p>
+      <Image class="w-8" src={mailLogo} alt="email logo" />
+      <Image class="w-8" src={faceLogo} alt="Facebook logo" />
+      <Image class="w-8" src={instaLogo} alt="Instagram logo" />
+    </p>
+  </div>
 
-<nav class="flex">
-  <li class="list-none px-1 hover:text-green-400">Inicial</li>
-  <li class="list-none px-2 hover:text-green-400">Primaria</li>
-  <li class="list-none px-2 hover:text-green-400">Secundaria</li>
-</nav>
+  <div class="py-8 flex">
+    <Image class="max-w-28 p-3" src={localLogo} alt="Logo institucional" />
+
+    <nav class="flex">
+      <li class="list-none px-1 hover:text-green-400">Nosotros</li>
+      <li class="list-none px-2 hover:text-green-400">Niveles</li>
+      <li class="list-none px-2 hover:text-green-400">Contacto</li>
+    </nav>
+  </div>
+</div>
