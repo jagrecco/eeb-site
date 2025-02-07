@@ -1,22 +1,48 @@
 ---
 import { Image } from "astro:assets";
 import localLogo from "../assets/logo color EEB.png";
-import faceLogo from "../assets/svgs/facebook.svg";
-import instaLogo from "../assets/svgs/instagram.svg";
-import mailLogo from "../assets/svgs/email2.svg";
-import mapsPin from "../assets/svgs/google-maps-pin.svg";
+import faceLogo from "../assets/svgs/facebook-logo.svg";
+import instaLogo from "../assets/svgs/Instagram_light.svg";
+import mailLogo from "../assets/svgs/email-mail.svg";
+import mapsPin from "../assets/svgs/map-pin.svg";
+import phone from "../assets/svgs/phone-calling.svg";
 ---
 
 <div class="py-3">
   <div class="flex gap-2">
-    <Image class="w-8" src={mapsPin} alt="Maps pin" />
-    <p>Tomás Justo Villegas 2724, B1754 San Justo</p>
-    <p>011 4441-1306</p>
-    <p>
-      <Image class="w-8" src={mailLogo} alt="email logo" />
-      <Image class="w-8" src={faceLogo} alt="Facebook logo" />
-      <Image class="w-8" src={instaLogo} alt="Instagram logo" />
-    </p>
+    <div class="flex gap-2">
+      <a
+        href="https://maps.app.goo.gl/RgnM8KAVNNCao1VJ9"
+        target="_blank"
+        title="Tomás Justo Villegas 2724, B1754 San Justo"
+      >
+        <Image class="w-8" src={mapsPin} alt="Maps pin" />
+      </a>
+    </div>
+
+    <div class="flex gap-2">
+      <Image class="w-8 hover:cursor-pointer" src={phone} alt="Phone" />
+      <a href="tel:+011 4441-1306"></a>
+    </div>
+    <div class="flex gap-3">
+      <a href="mailto:info@eeb.edu.ar">
+        <Image class="w-9" src={mailLogo} alt="email logo" />
+      </a>
+      <a
+        title="Seguinos en Facebook"
+        target="_blank"
+        href="https://www.facebook.com/people/Escuela-Evang%C3%A9lica-Bautista/100063981526740/"
+      >
+        <Image class="w-8" src={faceLogo} alt="Facebook logo" />
+      </a>
+      <a
+        title="Seguinos en Instagram"
+        target="_blank"
+        href="https://www.instagram.com/eebinstitucional/"
+      >
+        <Image class="w-8" src={instaLogo} alt="Instagram logo" />
+      </a>
+    </div>
   </div>
 
   <div class="py-8 flex">
